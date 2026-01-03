@@ -13,7 +13,7 @@ _: {
 
     oh-my-zsh = {
       enable = true;
-      plugins = [ "git" "zoxide" ];
+      plugins = [ "git" "zoxide" "direnv" ];
       theme = "robbyrussell";
     };
   };

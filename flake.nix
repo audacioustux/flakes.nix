@@ -3,6 +3,7 @@
   inputs = {
     # monorepo w/ recipes ("derivations")
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    nixpkgs-master.url = "github:nixos/nixpkgs/master";
 
     # manages configs
     home-manager.url = "github:nix-community/home-manager/master";

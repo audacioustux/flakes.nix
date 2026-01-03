@@ -12,6 +12,7 @@
       ripgrep
       gh
       zoxide
+      direnv
 
       # fonts
       nerd-fonts.monaspace
