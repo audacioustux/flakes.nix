@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, pkgsMaster, ... }:
 {
   home = {
     packages = with pkgs; [
@@ -13,6 +13,10 @@
       gh
       zoxide
       direnv
+
+      # LLM CLIs
+      pkgsMaster.opencode
+      pkgsMaster.gemini-cli
 
       # languages runtimes
       uv
