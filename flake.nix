@@ -27,18 +27,17 @@
       ...
     }@inputs:
     let
-      # TODO: replace with your username
-      primaryUser = "tanijimhossain";
-      hostName = "audacioustux-fn";
+      primaryUser = "tanijimhossain"; # CHANGE: your macOS username
+      hostName = "audacioustux-fn"; # CHANGE: your hostname (run `hostname` to get it)
     in
     {
       # build darwin flake using:
       # $ darwin-rebuild build --flake .#<name>
       darwinConfigurations."${hostName}" = darwin.lib.darwinSystem {
-        system = "aarch64-darwin";
+        system = "aarch64-darwin"; # CHANGE: use "x86_64-darwin" for Intel Macs
         modules = [
           ./darwin
-          ./hosts/audacioustux-fn/configuration.nix
+          ./hosts/audacioustux-fn/configuration.nix # CHANGE: match your hostname
         ];
         specialArgs = { inherit inputs self primaryUser hostName; };
       };

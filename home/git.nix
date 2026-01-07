@@ -2,11 +2,11 @@
 {
   programs.git = {
     enable = true;
-    userName = "Tanjim H.";
-    userEmail = "contact@audacioustux.com";
+    userName = "Tanjim H."; # CHANGE: your name
+    userEmail = "contact@audacioustux.com"; # CHANGE: your email
 
     signing = {
-      key = "3832734CA36A92B9";
+      key = "3832734CA36A92B9"; # CHANGE: your GPG key (or remove signing block)
       signByDefault = true;
     };
 
@@ -16,7 +16,7 @@
 
     extraConfig = {
       github = {
-        user = "audacioustux";
+        user = "audacioustux"; # CHANGE: your GitHub username
       };
       push = {
         autoSetupRemote = true;
